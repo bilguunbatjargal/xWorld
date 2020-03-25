@@ -13,6 +13,6 @@ export class UserSignupService {
    public doSignUp(user){
      //TO DO change latter
      user.role = 'member'
-     return this.http.post("http://localhost:8080/createUser", user,{responseType:'text' as 'json'})
+     return this.http.post("http://localhost:8080/createUser", user,{responseType:'text' as 'json'});
    }
   }

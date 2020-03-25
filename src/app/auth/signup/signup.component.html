@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navigation  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="../../assets/img/nuno.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="#navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#course">Course</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resources">Recources</a></li>
+                <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 form-indeed">
+                <form [formGroup]="myForm">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="firstName"><span class="req">* </span> First Name:  </label>
+                            <input required type="text" formControlName="firstName" id="firstName"
+                                class="form-control" maxlength="28" placeholder="Enter your first name..." />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName"><span class="req">* </span> Last Name : </label>
+                            <input class="form-control" type="text" formControlName="lastName" id="lastName"
+                                placeholder="Enter your last name..." required />
+                            <div id="errLast"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><span class="req">* </span> Email: </label>
+                            <small>   This will be your login user name</small>
+                            <input class="form-control" type="text" formControlName="email" required id="email"
+                                placeholder="Enter valid email address" />
+                                <span *ngIf="!this.myForm.get('email').valid">not valid</span>
+                            <div id="errFirst"></div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password"><span class="req">* </span> Password: </label>
+                            <input class="form-control" required   type="password" formControlName="password"
+                                id="password" placeholder="Password" />
+                            <div class="status" id="status"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword"><span class="req">* </span> Confirm Password: </label>
+                            <input class="form-control" required type="password" formControlName="confirmPassword"
+                                id="confirmPassword" placeholder="Confirm Password" />
+                            <div class="status" id="status"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="signUp()">
+                        </div>
+                    </fieldset>
+                </form><!-- ends register form -->
+                <!-- second for to fiter user-->
+            </div><!-- ends col-6 -->
+
+        </div>
+    </div>
+
+
+    <div id="contact" class="offset">
+        <footer>
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center">
+                    <img src="../../assets/img/logo1.png" alt="">
+                    <p> At our core is a collection of design and
+                         development solutaion that represent everthing your
+                          business needs to compete in the modern marketplace
+                    </p>
+                    <strong>Contact Info</strong>
+                    <p>(415) 335 - 5334<br>bilguunbatjargal27@gmail.com</p>
+                    <a href="#" target="_blank">
+                        <fa-icon [icon]="faFacebook" ></fa-icon>
+                    </a>
+    
+                    <a href="#" target="_blank">
+                        <fa-icon [icon]="faInstagram" ></fa-icon>
+                    </a>
+    
+                    <a href="#" target="_blank">
+                        <fa-icon [icon]="faYoutube"></fa-icon>
+                    </a>
+                </div>
+                <hr class="socket">
+                &copy; xWorld website.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

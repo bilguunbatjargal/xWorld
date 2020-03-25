@@ -1,0 +1,92 @@
+html, body  {
+    padding-top:50px;
+    background-color: rgb(59, 62, 70);
+}
+fieldset {
+    margin: 2rem auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid #ccc; 
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #fbfbfb;
+    width: 40%;
+}
+legend {
+   color: #678;
+}
+.form-control {
+    width: 95%;
+}
+.form-indeed {
+    width: 50%;
+}
+label {
+  font-weight: 700;
+}
+label small {
+    color: #1ebba3;
+}
+span.req {
+    display: none ;
+    color:maroon;
+    font-size: 112%;
+}
+.container {
+    margin-top: 5rem;
+}
+
+/* Footer Contact  */
+
+footer {
+    background-color: #40474e;
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+  }
+  footer img {
+    height: 3rem;
+    margin: 1.5rem 0;
+  }
+  footer a {
+    color: white;
+  }
+  footer fa-icon {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+  }
+  footer fa-icon:hover {
+    color: #1ebba3;
+ }
+ hr.socket {
+   width: 100%;
+   border-top: .2rem solid #666b71;
+   margin-top: 3rem;
+ }
+
+ /* Navigation  */
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+.navbar-brand img{
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color:white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}

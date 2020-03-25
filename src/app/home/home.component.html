@@ -1,1 +1,224 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xWorld</title>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+  
+<!-- Start Home Section -->
+<div id="home">
+    <!-- Navigation  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="../../assets/img/nuno.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="#navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#course">Course</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resources">Recources</a></li>
+                <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Page Section  -->
+     <div class="landing">
+        <div class="home-wrap">
+            <div class="home-inner">
+            </div>
+        </div>
+    </div>
+
+    <div class="caption text-center">
+        <h1> Welcome to xWorld </h1>
+        <h3> Own project for fun </h3>
+        <a class="btn btn-outline-light btn-lg" href="/signup" >Signup</a>
+    </div>
+</div>
+
+<!-- Course Section -->
+<div id="course" class="offset">
+    <div class="col-12 narrow text-center">
+        <h1>Hello this is xWorld website developed for having fun and learn</h1>
+        <p class="lead"> Learn creating fullstack website with Angular9 and Spring boot 4. Also using Firebase cloud database</p>
+        <a href="#" class="btn btn-secondary btn-md" target="_blank">Check Github Code</a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div id="features" class="offset">
+    <!-- Jumbotron  -->
+    <div class="jumbotron">
+        <div class="narrow text-center">
+            <div class="col-12">
+                <h3 class="heading">Features</h3>
+                <div class="heading-underline">
+                    
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature">
+                        <fa-icon [icon]="faPlayCircle" size="4x" transform="shrink-3 up-5"></fa-icon>
+                        <h3>Custom Animation</h3>
+                        <p>Animate.css ad Waypoints.js allow for smooth animations scrolling down the site.</p>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <fa-icon [icon]="faSlidersH" size="4x" transform="shrink-4.5 up-4.5"></fa-icon>
+                        <h3>Custom Animation</h3>
+                        <p>Animate.css ad Waypoints.js allow for smooth animations scrolling down the site.</p>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <fa-icon [icon]="faWpforms" size="4x" transform="shrink-4 up-6"></fa-icon>
+                        <h3>Custom Animation</h3>
+                        <p>Animate.css ad Waypoints.js allow for smooth animations scrolling down the site.</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Resource Section -->
+<div id="resources" class="offset">
+    <!-- Fixed background -->
+<div class="fixed-background">
+    <div class="row dark text-center">
+
+        <div class="col-12">
+            <h3 class="heading">Build with Care</h3>
+            <div class="heading-underline"></div>
+        </div>
+
+        <div class="col-md-4">
+            <h3>HTML 5</h3>
+            <div class="feature">
+                <fa-icon [icon]="faCode" size="3x"></fa-icon>
+            </div>
+            <p class="lead">Build with the latest, HTML 5</p>
+        </div>
+        <div class="col-md-4">
+            <h3>BOOSTRAP 4</h3>
+            <div class="feature">
+                <fa-icon [icon]="faBold" size="3x"></fa-icon>
+            </div>
+            <p class="lead">Build with the latest, HTML 5</p>
+        </div>
+        <div class="col-md-4">
+            <h3>CSS 3</h3>
+            <div class="feature">
+                <fa-icon [icon]="faCss3" size="3x"></fa-icon>
+            </div>
+            <p class="lead">Build with the latest, HTML 5</p>
+        </div>
+    </div>
+
+    <div class="fixed-wrap">
+        <div class="fixed">
+            <img src="../../assets/img/apple.png" alt="">
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- Client Section -->
+<div id="clients" class="offset">
+    <div class="jumbotron">
+        <div class="col-12 text-center">
+            <h3 class="heading">Clients</h3>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 clients">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/client1.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote>
+                             <fa-icon [icon]="faQuoteLeft"></fa-icon>
+                            I see This site is more of a parner to my company tan a resouce.
+                             I can pick up the phone and talk to anyone at any time specially
+                              that handsome Bilguun. He can easily intereact with us as a business makes it really simple.
+                              <hr class="clients-hr">
+                              <cite>&#8212; Eric, Small Business Owner</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 clients">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../../assets/img/client2.png" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <blockquote>
+                             <fa-icon [icon]="faQuoteLeft"></fa-icon>
+                                The great thing about xWorld is its not just design.
+                                 Its responsive Boostrap theme with animation.
+                                  xWorld's layout is seamless the smooth parallax 
+                                  scrolling and a pop-up portfolio section for my images. 
+                                  And i am really happy to take some Bilguun's picture and posting my wall. 
+                              <hr class="clients-hr">
+                              <cite>&#8212; Rachel, Professional Photographer </cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 narrow text-center">
+        <p class="lead">
+            Want to develope this website with your own design? 
+        </p>
+        <a href="#" class="btn btn-secondary btn-md" target="_blank">Check Github Code</a>
+    </div>
+</div>
+
+ <!-- Contact Section -->
+<div id="contact" class="offset">
+    <footer>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <img src="../../assets/img/nuno.png" alt="">
+                <p> At our core is a collection of design and
+                     development solutaion that represent everthing your
+                      business needs to compete in the modern marketplace
+                </p>
+                <strong>Contact Info</strong>
+                <p>(415) 335 - 5334<br>bilguunbatjargal27@gmail.com</p>
+                <a href="#" target="_blank">
+                    <fa-icon [icon]="faFacebook" ></fa-icon>
+                </a>
+
+                <a href="#" target="_blank">
+                    <fa-icon [icon]="faInstagram" ></fa-icon>
+                </a>
+
+                <a href="#" target="_blank">
+                    <fa-icon [icon]="faYoutube"></fa-icon>
+                </a>
+            </div>
+            <hr class="socket">
+            &copy; xWorld website.
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>

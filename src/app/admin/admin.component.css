@@ -1,0 +1,31 @@
+button{
+    background: rgb(1, 29, 51);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Navigation  */
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0,0,0,0.6) !important;
+  }
+  
+  .navbar-brand img{
+    height: 2rem;
+  }
+  .navbar-nav li {
+    padding-right: .7rem;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color:white;
+    padding-top: .8rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+  }
