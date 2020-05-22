@@ -26,7 +26,7 @@ export class SignupComponent implements OnInit {
       lastName: new FormControl('', Validators.required),
       email: new FormControl('', Validators.email),
       password: new FormControl('', Validators.required),
-      confirmPass: new FormControl('', Validators.required),
+      confirmPassword: new FormControl('', Validators.required),
     });
 
     this.faFacebook = faFacebook;
@@ -43,12 +43,11 @@ export class SignupComponent implements OnInit {
 
 
   public signUp() {
-    if(this.myForm.invalid){
-      return;
-    }
     const response = this.authService.register(this.myForm.value);
+    console.log(response);
+    
     response.subscribe((data) => this.message = data);
-    this.router.navigateByUrl('/home');
+    // this.router.navigateByUrl('/home');
 
   }
   

@@ -16,6 +16,7 @@ export class AuthService {
   constructor(private httpClient: HttpClient) { }
 
   register(user: User): Observable<JwtResponse> {
+    
     return this.httpClient.post<JwtResponse>(`${this.AUTH_SERVER}/signup`, user).pipe(
       tap((res:  JwtResponse ) => {
 
@@ -45,6 +46,10 @@ export class AuthService {
     localStorage.removeItem("ACCESS_TOKEN");
     localStorage.removeItem("EXPIRES_IN");
     this.authSubject.next(false);
+  }
+
+  public getToken(): string {
+    return localStorage.getItem('token');
   }
 
   isAuthenticated() {
